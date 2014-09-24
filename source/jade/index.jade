@@ -1,0 +1,175 @@
+- var active = 1
+- var pageName = 'Главная'
+include includes/settings
+doctype html
+html(lang='ru').no-js
+  head
+    include includes/head
+  body
+    .page-wrap
+      include includes/top-bar
+      main
+        #section-hero
+          .container
+            .hero__content
+              h1 Антифриз
+              h2 Kukdong
+              p Антифриз KUKDONG произведен по органической технологии в соответствии с международным стандартом качества ISO9001 и корейскими стандартами качества заводов автопроизводителей. Антифриз KUKDONG идеально совместим с ОЕМ-антифризами в автомобилях корейского производства, а также подходит для автомобилей производства Японии, США, Европы.
+            .hero__pic
+              img(src="i/hero-bottle.png", alt="")
+          .hero__slogan
+            .container Лучший антифриз для корейских автомобилей
+          .container
+            .hero__features
+              .features__first
+                i.icon-gears
+                ul
+                  li Защищает от коррозии
+                  li Не агрессивен по отношению к резиновым<br>деталям системы охлаждения
+                  li Является отличной смазкой для помп
+              .features__second
+                h2
+                  span 60 000
+                  |КМ
+                h3 или <strong>3 года</strong>
+                p Сохраняет рабочие свойства в системе охлаждения
+        #section-production
+          .container
+            header Производство
+            .gallery
+              ul
+                li.gallery__item: a(href="i/gallery/1.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/1-thumb.jpg")
+                li.gallery__item: a(href="i/gallery/2.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/2-thumb.jpg")
+                li.gallery__item: a(href="i/gallery/3.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/3-thumb.jpg")
+                li.gallery__item: a(href="i/gallery/4.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/4-thumb.jpg")
+                li.gallery__item: a(href="i/gallery/5.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/5-thumb.jpg")
+                li.gallery__item.hidden: a(href="i/gallery/6.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/6-thumb.jpg")
+                li.gallery__item.hidden: a(href="i/gallery/7.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/7-thumb.jpg")
+                li.gallery__item.hidden: a(href="i/gallery/8.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/8-thumb.jpg")
+                li.gallery__item.hidden: a(href="i/gallery/9.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/9-thumb.jpg")
+                li.gallery__item.hidden: a(href="i/gallery/10.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/10-thumb.jpg")
+                li.gallery__item.hidden: a(href="i/gallery/11.jpg", data-lightbox="gallery")
+                  img(src="i/gallery/11-thumb.jpg")
+                li.gallery__item.gallery__item--readmore: a(href="#")
+                  span Все фото
+                  |&rarr;
+            p Антифриз KUKDONG производит лидер корейского рынка ОЕМ-автохимии компания Kukdong Jeyen Co., Ltd. Антифриз поставляется на конвейеры 5 крупнейших автопроизводителей Кореи: Hyundai, Kia, Renault Samsung, GM Daewoo, Ssang Yong. Доля антифризов, разработанных компанией KUKDONG, составляет более чем 55% на внутреннем рынке страны. Ежегодно компания инвестирует 10% годового оборота в разработку инновационных методик для обеспечения преимуществ на мировом рынке.
+        #section-features
+          .features__bg
+          .container
+            header Характеристики
+              a.header__button(href="#") Скачать буклет
+          .container.features
+            .features__item
+              i.icon-speed
+              p Сохраняет рабочие свойства в системе охлаждения в течение 3-х лет или 60 000 км.
+            .features__item
+              i.icon-like
+              p Не агрессивен по отношению к резиновым деталям системы охлаждения.
+            .features__item
+              i.icon-bubbles
+              p Обладает очень низкой вспениваемостью и низкой устойчивостью пены.
+          .container.features--small
+            .features__item
+              i.icon-chem
+              p Полностью готов к применению, не нужно разбавлять водой
+            .features__item
+              i.icon-shield
+              p Защищает от коррозии алюминиевые, медные, стальные, чугунные детали и припои в течение всего срока эксплуатации.
+            .features__item
+              i.icon-drop
+              p Является отличной смазкой для помп.
+            .features__item
+              i.icon-therm
+              p Эффективно препятствует перегреву двигателя в летнее время и замораживанию в зимнее, даже при температуре -400С.
+        #section-perfectfit
+          .container.container--black
+            h2 Идеально подходит для автомобилей:
+            div
+              .perfectfit__item
+                img(src="i/logos/hyundai.png")
+                p Hyundai
+              .perfectfit__item
+                img(src="i/logos/kia.png")
+                p Kia
+              .perfectfit__item
+                img(src="i/logos/samsung.png")
+                p Renault Samsung
+              .perfectfit__item
+                img(src="i/logos/daewoo.png")
+                p GM Daewoo
+              .perfectfit__item
+                img(src="i/logos/sy.png")
+                p Ssang Yong
+            p А также для автомобилей других марок производства Японии, США, Европы
+        #section-howitworks
+          .container
+            .howitworks__pic
+              img(src="i/howitworks.png")
+            .howitworks__desc
+              h2 Как работает?
+              p Охлаждающая жидкость KUKDONG создана на основе этиленгликоля с добавлением органических (карбоксилатных) защитных присадок. Органические присадки не оседают на стенках системы охлаждения и не забивают каналы радиатора, при этом защищают двигатель, создавая тонкий защитный слой исключительно в местах коррозии. Такая технология позволяет антифризу KUKDONG эффективно отводить тепло двигателя, предотвращая перегревы даже в сильную жару.
+        #section-tips
+          .container
+            header Рекомендации
+            .tips
+              ul
+                li.tips__item.active
+                  a(href="#") Почему необходима периодическая замена?
+                  p При нагревании антифриза в системе охлаждения со временем изменяется химический состав антифриза, присадки вырабатываются. Антифриз перестает защищать от коррозии, поэтому крайне важно менять антифриз регулярно.
+                  img(src="i/tips/1.jpg")
+                li.tips__item
+                  a(href="#") Когда менять?
+                  p Антифриз KUKDONG необходимо менять каждые 3 года или 60 000 км, что наступит раньше. Либо руководствуйтесь рекомендациями производителя автомобиля.<br><strong>В любом случае, срочно замените антифриз, если:</strong><br>- Антифриз поменял цвет, помутнел или обесцветился;<br>- Произошел перегрев двигателя;<br>- В расширительном бачке или радиаторе обнаружены ржавчина, осадок или желеобразные отложения.
+                  img(src="i/tips/2.jpg")
+                li.tips__item
+                  a(href="#") Как менять?
+                  p - Перед началом работы дайте двигателю автомобиля остыть, чтобы избежать ожогов.<br>- Слейте из системы охлаждения старую охлаждающую жидкость.<br>- Если ранее в автомобиле использовалась неорганическая охлаждающая жидкость (тосол, силикатный антифриз и т.п.), необходимо промыть систему охлаждения водой или специальными промывочными составами.<br>- Залейте антифриз в радиатор доверху и закройте радиатор крышкой. Запустите двигатель и дайте ему поработать на холостом ходу в течение 10 минут.<br>- Откройте крышку радиатора и снова доверху наполните радиатор. Затем закройте радиатор крышкой.<br>- Заполните антифризом расширительный бачок до требуемого уровня.
+                  img(src="i/tips/3.jpg")
+        #section-contacts
+          .container
+            .contacts
+              header Оптовым покупателям
+              .contacts__container
+                ul
+                  li.contacts__item.active
+                    a(href="#") Владивосток
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Владивосток,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+                  li.contacts__item
+                    a(href="#") Москва
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Москва,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+                  li.contacts__item
+                    a(href="#") Хабаровск
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Хабаровск,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+                  li.contacts__item
+                    a(href="#") Екатеринбург
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Екатеринбург,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+                  li.contacts__item
+                    a(href="#") Иркутск
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Иркутск,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+                  li.contacts__item
+                    a(href="#") Краснодар
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Краснодар,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+                  li.contacts__item
+                    a(href="#") Красноярск
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Красноярск,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+                  li.contacts__item
+                    a(href="#") Новосибирск
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Новосибирск,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+                  li.contacts__item
+                    a(href="#") Санкт-Петербург
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Санкт-Петербург,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+                  li.contacts__item
+                    a(href="#") Барнаул
+                    .contacts__content <strong>Головной офис</strong><br>690089, г. Барнаул,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+    include includes/tail

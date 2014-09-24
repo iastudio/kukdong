@@ -13,5 +13,16 @@ footer {
       border: none;
     }
   }
+
+  .footer__left {
+    @include col(1/2);
+    text-align: left;
+  }
+
+  .footer__right {
+    @include col(1/2);
+    text-align: right;
+  }
+
 }
 

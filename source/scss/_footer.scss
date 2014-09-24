@@ -1,4 +1,17 @@
 footer {
+  height: 70px;
+  line-height: 70px;
+  font-size: 17px;
+  text-align: center;
 
+  a {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    line-height: 1;
+
+    &:hover {
+      border: none;
+    }
+  }
 }
 

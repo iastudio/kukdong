@@ -342,10 +342,17 @@ main {
 }
 
 #section-perfectfit {
-  background: transparent url('../i/car-bg.jpg') center center no-repeat;
-  background-size: cover;
   color: #FFF;
   padding: 90px 0;
+  position: relative;
+
+  .perfectfit__bg {
+    background: transparent url('../i/cars/hyun.jpg') center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+  }
 
   h2 {
     color: #fff;
@@ -362,6 +369,13 @@ main {
   .perfectfit__item {
     @include col(1/5);
     text-align: center;
+    cursor: pointer;
+    img {
+      transition: all .3s ease-out;
+    }
+    &:hover img, &.active img {
+      filter: sepia(100%);
+    }
   }
 }
 

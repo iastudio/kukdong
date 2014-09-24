@@ -93,22 +93,23 @@ html(lang='ru').no-js
               i.icon-therm
               p Эффективно препятствует перегреву двигателя в летнее время и замораживанию в зимнее, даже при температуре -400С.
         #section-perfectfit
+          .perfectfit__bg
           .container.container--black
             h2 Идеально подходит для автомобилей:
             div
-              .perfectfit__item
+              a.perfectfit__item.active(href="i/cars/hyun.jpg")
                 img(src="i/logos/hyundai.png")
                 p Hyundai
-              .perfectfit__item
+              a.perfectfit__item(href="i/cars/kia.jpg")
                 img(src="i/logos/kia.png")
                 p Kia
-              .perfectfit__item
+              a.perfectfit__item(href="i/cars/rs.jpg")
                 img(src="i/logos/samsung.png")
                 p Renault Samsung
-              .perfectfit__item
+              a.perfectfit__item(href="i/cars/daewoo.jpg")
                 img(src="i/logos/daewoo.png")
                 p GM Daewoo
-              .perfectfit__item
+              a.perfectfit__item(href="i/cars/ssangyoung.jpg")
                 img(src="i/logos/sy.png")
                 p Ssang Yong
             p А также для автомобилей других марок производства Японии, США, Европы
@@ -172,4 +173,5 @@ html(lang='ru').no-js
                   li.contacts__item
                     a(href="#") Барнаул
                     .contacts__content <strong>Головной офис</strong><br>690089, г. Барнаул,<br>ул. Тухачевского, 48а.<br>Тел.: (423) 279-0-279 (многоканальный),<br>Факс: (423) 237-84-95,<br>E-Mail: vladivostok@uniqom.ru<br><br><strong>Отдел по работе со странами СНГ</strong><br>Руководитель отдела:<br>Витвицкий Дмитрий Станиславович<br>Тел.: (423) 279-02-79,  доб. 313,<br>Факс: (423) 237-84-95,<br>E-mail: d.vitvitsky@uniqom.ru<br>
+      include includes/footer
     include includes/tail

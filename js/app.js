@@ -23,6 +23,18 @@ $(function(){
     $(this).parent().addClass('active');
   });
 
+  $('.perfectfit__item').on('click', function(e) {
+    e.preventDefault();
+    var src = $(this).attr('href');
+    $('.perfectfit__item.active').removeClass('active');
+    $(this).addClass('active');
+    $('.perfectfit__bg').fadeOut(300, function(){
+      $('#section-perfectfit .perfectfit__bg').css('background-image', 'url(' + src + ')');
+      $('.perfectfit__bg').fadeIn(300);
+    })
+
+  });
+
    /////////////////
    //    SCROLL   //
    /////////////////
